@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Travel Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("assets/register-bg.avif");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            overflow: hidden;
+        }
+        .image-section {
+            width: 40%;
+            background: url("assets/left-side.png") no-repeat center center/cover;
+        }
+        .container {
+            width: 60%;
+            padding: 40px;
+            text-align: center;
+            background-color: #0056b3; /* Updated color */
+            color: white; /* Adjusted text color for better visibility */
+        }
+        .container h2 {
+            font-size: 24px;
+            color: white; /* Updated to match the background */
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: white; /* Adjusted text color */
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: white; /* Changed button color for contrast */
+            color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+        .signin {
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+        }
+        .signin a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image-section"></div>
+        <div class="container">
+            <h2>Exploring Travel Form</h2>
+            <form>
+                <div class="form-group">
+                    <label>Destination</label>
+                    <input type="text" placeholder="Enter destination" required>
+                </div>
+                <div class="form-group">
+                    <label>Check In - Check Out</label>
+                    <input type="text" placeholder="Select dates" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests & Rooms</label>
+                    <input type="text" placeholder="02 Adults - 1 Room" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="work-travel">
+                    <label for="work-travel">I'm traveling for work</label>
+                </div>
+                <button class="btn" type="submit">Find your places</button>
+            </form>
+            <div class="signin">Already have an account? <a href="#">Sign in</a></div>
+        </div>
+    </div>
+</body>
+</html>
